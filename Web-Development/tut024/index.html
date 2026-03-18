@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadow & Outline</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 30px;
+        }
+
+        .box {
+            border: 2px solid black;
+            padding: 20px;
+            box-shadow: 2px 7px 9px 10px #120446;
+            text-shadow: -1px 1px 3px #381d23;
+        }
+
+        .boxy {
+            box-sizing: border-box;
+            padding: 20px;
+            text-shadow: -1px 2px 3px #7309c2;
+            outline: 2px solid #0a090a;
+            outline-offset: -8px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">SHADOW</div>
+    <div class=boxy>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. A cumque eum impedit enim corporis optio ipsa, soluta
+        modi numquam, eaque dolorum corrupti aut!
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Media Query</title>
+    <style>
+        h2 {
+            color: rgb(177, 177, 81);
+            background-color: aqua;
+            padding: 20px;
+            border: 2px solid black;
+            /* width: auto; */
+
+        }
+
+        .b1 {
+            border: 2px solid black;
+            padding: 40px;
+            background-color: blueviolet;
+            color: white;
+            margin: 10px;
+        }
+
+        .box {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        
+        /* Basic media syntax */
+        /* @media not|only mediatype and (expressions)
+        {
+            CSS-Code -
+        } */
+
+        @media only screen and (max-width:350px) {
+            body {
+
+                .b1 {
+                    background-color: rgb(242, 128, 210);
+                }
+
+                h2 {
+                    color: rgb(0, 0, 0);
+                    background-color: rgb(235, 149, 45);
+                }
+
+                .box {
+                    flex-direction: column;
+                }
+            }
+        }
+        @media screen and (orientation:landscape){
+            body{
+                .b1 {
+                    background-color: rgb(148, 244, 164);
+                    padding: 50px 115px;
+                }
+
+                h2 {
+                    color: rgb(0, 0, 0);
+                    background-color: rgb(40, 131, 61);
+                }
+            }
+        }
+
+        /* Small screens (phones, up to 768px)*/
+        /*@media only screen and (max-width: 768px) {
+            h2 {
+                font-size: 1.2rem;
+                padding: 10px;
+            }
+
+            .b1 {
+                padding: 20px;
+                font-size: 1rem;
+            }
+        }
+`       */
+
+        /* Extra small screens (up to 480px) */
+        /* @media only screen and (max-width: 480px) {
+            h2 {
+                font-size: 1rem;
+                width: 100%;
+            }
+
+            .b1 {
+                width: 90%;
+                margin: 5px auto; 
+            }
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="max yu ">
+        <h2>CSS Media Query</h2>
+        <div class=box>
+            <div class="b1">Query1</div>
+            <div class="b1">Query2</div>
+            <div class="b1">Query3</div>
+        </div>
+    </div>
+</body>
+
+</html>

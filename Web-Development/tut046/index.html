@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation in CSS</title>
+    <style>
+        *{
+            margin:0;
+        }
+        .container{
+            background-color: aquamarine;
+            width: 70vw;
+            height: 60vh;
+            margin: 30px;
+        }
+        .box{
+            width: 10vw;
+            height: 10vh;
+            background-color: blueviolet;
+            /* border-radius: 200px; */
+            animation:danscing-square;
+            animation-duration: 5s;
+            animation-fill-mode: forwards;
+            animation-iteration-count: infinite;
+        }
+        .ball{
+            margin: 0;
+            padding: 50px 0px;
+            animation: danscing-ball;
+            animation-duration: 2s;
+            /* animation-iteration-count: infinite; */
+            animation-delay: 2s;
+            animation-timing-function: ease-in-out;
+            animation-direction: alternate;
+            animation-fill-mode: both;
+            animation-play-state: running;
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+        }
+
+        @keyframes danscing-ball {
+            from{
+                transform: translateY(20vh);
+            }
+            to{
+                transform: translateX(40vw) ;
+            }
+        
+        }
+        /* @keyframes danscing-square{
+            from{
+            
+            }
+            to{
+                transform: translatex(41vw) translateY(20vh);
+            }
+        } */
+        @keyframes danscing-square {
+            0%{
+                transform: translateX(0vh);
+            }
+            25%{
+                transform: translatex(50vw);
+            }
+            50%{
+                transform: translatey(50vh);
+            }
+            75%{
+                transform: translatey(100vw);
+            }
+            100%{
+                transform: translatey(0vh);
+
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+        
+        </div>
+        <img class="ball" src="img.svg" alt="ball">
+    </div>
+
+</body>
+</html>

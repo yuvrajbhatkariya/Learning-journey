@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            border: 2px solid ;
+            height: 60vh;
+            display: flex;
+            /* justify-content: center; */
+            align-items: center;
+            /* flex-direction: column; */
+            /* flex-wrap: wrap; */
+            /* row-gap:  10px; */
+            /* column-gap: 0px; */
+            /* row-gap: 5px; */
+            /* flex-flow: row wrap; */
+            /* flex-wrap: wrap; */
+            
+        }
+        .item{
+            height: 50px;
+            width: 60px;
+            /* margin :10px; */
+            border: 2px solid;
+            background-color: rgb(235, 127, 59);
+        }
+        .i{
+            /* flex-grow: 4; */
+            flex-shrink: 3;
+            align-self: flex-end;
+        }
+        .j{
+            align-self: flex-start;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class = "container">
+            <div class = "item i">1</div>
+            <div class = "item ">2</div>
+            <div class = "item">3</div>
+            <div class = "item">4</div>
+            <div class = "item">5</div>
+            <div class = "item">6</div>
+            <div class = "item">7</div>
+            <div class = "item">8</div>
+            <div class = "item j" >9</div>
+            <div class = "item">10</div>
+            <div class = "item"></div>
+            <div class = "item"></div>
+            <div class = "item"></div>
+            <div class = "item"></div>
+            
+            <div class = "item"></div>
+            <div class = "item">111</div>
+        </div>
+    </main>
+</body>
+</html>

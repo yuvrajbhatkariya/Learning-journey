@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Sizing Units </title>
+    <style>
+        *{
+            padding:0;
+            margin: 0;
+        }
+        html{
+            font-size: 12px;
+        }
+        .first-line{
+            box-sizing: border-box;
+            border:2px solid rgb(0, 0, 0);
+            /* width: 1440px; */
+            width: 90vw;
+            background-color: aqua;
+            margin:20px auto;
+            font-size: 40px;
+        }
+        .second-line{
+            background-color: aquamarine;
+            border:2px solid rgb(0, 0, 0);
+            box-sizing: border-box;
+            /* width: 1440px; */
+            width: 90vw;
+            margin:20px auto;
+            min-height: 60vh;
+            min-width: 90vw;
+            /* height: 60vh; */
+            /* font-size: 18px; */ 
+        }
+        .second-line div{
+            font-size: 2em;
+            width:50%;
+            border:2px solid red;
+        }
+        .second-line>div>div{
+            font-size:1em;
+            width:50%;
+            border:2px solid pink;
+        }
+        .third-line{
+            box-sizing: border-box;
+            margin: auto;
+            border: solid black;
+            background-color: rgb(191, 170, 138);
+            /* width: 100vmax; */
+            width: 90vw;
+        
+        }
+    </style>
+</head>
+<body>
+    <div class = "first-line">
+        CSS Sizing units
+    </div>
+    <div class = "second-line">
+        <div> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab aperiam error recusandae alias, magni earum, assumenda quod possimus quis reiciendis tenetur nemo fugiat!
+            <div>
+                p cupiditate in enim commodi magnam dlmlldldlf?
+            </div>
+        </div>
+    </div>
+    <div class = "third-line">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio provident quas repellat nulla corporis. Deleniti nisi explicabo possimus tenetur odio, fuga corporis accusamus?
+    </div>
+</body>
+</html>

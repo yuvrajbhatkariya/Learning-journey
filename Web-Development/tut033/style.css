@@ -1,0 +1,101 @@
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+
+        :root {
+            --body_baground: rgb(208, 207, 207);
+            --bag_home: #ffadad;
+            --bag_custom: #ffd6a5;
+            --bag_product: #fdffb6;
+            --bag_order: #caffbf;
+            --bag_report: #9bf6ff;
+            --bag_admns: #a0c4ff;
+        }
+
+        body {
+            background-color: var(--body_baground);
+        }
+
+        .Name {
+            padding: 10px;
+        }
+
+        .nav-box {
+            border: 2px solid black;
+            background-color: #a0c4ff;
+
+        }
+
+        .nav-inside {
+            list-style: none;
+            display: flex;
+            
+        }
+
+        /* List items */
+        ul li{
+            /* border: 2px solid black; */
+            padding: 10px;
+        }
+        ul li:nth-child(1) {
+            background-color: var(--bag_home);
+            /* Home */
+        }
+
+        ul li:nth-child(2) {
+            background-color: var(--bag_custom);
+            /* Customers */
+        }
+
+        ul li:nth-child(3) {
+            background-color: var(--bag_product);
+            /* Product */
+        }
+
+        ul li:nth-child(4) {
+            background-color:var(--bag_order);
+            /* Orders */
+        }
+
+        ul li:nth-child(5) {
+            background-color: var(--bag_report);
+            /* Report */
+        }
+
+        ul li:nth-child(6) {
+            background-color: var(--bag_admns);
+            /* Administration */
+        }
+
+        ul li:hover{
+        cursor: pointer;
+        background-color: var(--body_baground);
+        }
+
+
+
+
+        .hi {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hi2 {
+            text-align: center;
+        }
+
+
+        @media (max-width: 768px) {
+            .nav-inside {
+                flex-wrap: wrap;
+            }
+
+            ul li {
+                padding: 5px;
+                font-size: 14px;
+            }
+        }

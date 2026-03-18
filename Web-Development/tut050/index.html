@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Filters</title>
+    <style>
+        img {
+            height: 50vh;
+        }
+
+        .img1 {
+            filter: blur(7px);
+        }
+
+        .img2 {
+            /* filter: grayscale(100%); */
+            /* filter: contrast(2); */
+            /* filter: drop-shadow(16px 16px 20px rgb(0, 0, 0)) */
+            /* filter: opacity(75%) */
+            /* filter: invert(0.2); */
+            /* filter: sepia(60%); */
+            filter: saturate(30%);
+        }
+
+        .img3 {
+            filter: contrast(2);
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <img class="img1" src="../Images/JollyRoger.jpeg" alt="image">
+        <img class="img3" src="../Images/Wednesday.avif" alt="image">
+        <img class="img2" src="../Images/RDJ.webp" alt="image">
+    </div>
+</body>
+
+</html>

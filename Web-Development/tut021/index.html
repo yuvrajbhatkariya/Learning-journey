@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cascade Algorithm</title>
+    <style>
+        h1 {
+            color: aqua;
+        }
+
+        .red {
+            color: red;
+        }
+
+        .green {
+            color: green;
+        }
+
+        #purple {
+            color: purple;
+        }
+
+        .blue {
+            color: blue;
+        }
+
+        .imp {
+            color: brown !important;
+        }
+        /* The specificity is 1+ 10 +10 + 10*/
+        a.harryclass.rohan-class[href]:hover {
+            color: red;
+        }
+        [data-x = a]{
+            color:violet;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <!-- Inline Style > ID Selector > Class or Attribute Selector > Element Selector > Universal Selector -->
+        <h1 style="color:pink" id="purple" class="red green blue imp" data-x = "a">Specificity in CSS</h1>
+    </div>
+</body>
+
+</html>

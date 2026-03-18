@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise : 5</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        /* Navigation bar */
+        .navi-box {
+            border: 2px solid black;
+            display: flex;
+            background-color: blueviolet;
+            color: white;
+            top: 0px;
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+        }
+
+        ul li {
+            padding: 10px 20px;
+        }
+
+        .nbox {
+            position: sticky;
+            top: 0px;
+        }
+
+        /* Content */
+        .main {
+            border: 2px solid black;
+            /* height: 95vh; */
+            background-color: black;
+        }
+
+        .box {
+            border: 2px solid black;
+            height: 80vh;
+            display: flex;
+            justify-content: space-between;
+            padding: 25px;
+            background-color: rgb(187, 207, 235);
+            margin: 20px;
+        }
+
+        .box>div {
+            border: 2px solid;
+            padding: 20px;
+            width: 30vw;
+            margin: 40px;
+            background-color: bisque;
+        }
+
+        @media only screen and (max-width : 450px) {
+
+            ul li {
+                font-size: 16px;
+                padding: 5px 10px
+            }
+        }
+
+        /* welcome and logo */
+        .welcome {
+            color: rgb(255, 255, 255);
+        }
+
+        .welcome div:nth-child(1) {
+            font-size: 50px;
+            padding: 20px 15px;
+
+            background-color: transparent;
+            border: none;
+            position: fixed;
+            right: 50px;
+            bottom: 10px;
+        }
+
+        .welcome div:nth-child(2) {
+            margin: 20px auto;
+            padding: 10px 30px;
+            text-align: center;
+            border: 4px solid white;
+            border-radius: 20px;
+            display: flex;
+            justify-content: center;
+            width: 30vw;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bigbox">
+        <div class="nbox">
+            <nav class="navi-box">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Service</li>
+                    <li>Report</li>
+                    <li>Contact</li>
+                </ul>
+            </nav>
+        </div>
+        <div class="main">
+            <div class="box">
+                <div>box1</div>
+                <div>box2</div>
+            </div>
+            <div class="welcome">
+                <div>😎</div>
+                <div><h1>Welcome to My Website !!</h2></div>
+            </div>
+        </div>
+        <div>Footer Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi tenetur fugit pariatur debitis
+            perspiciatis sapiente, voluptates doloribus eum itaque maiores! Iusto hic officiis velit magnam,
+            quam illum minima repellat assumenda facere, esse neque veritatis totam tempore cupiditate quidem illo
+            quaerat, iste error harum iusto! Voluptates ut illum id vero corporis molestiae eos repellendus sequi
+            veritatis dicta excepturi nulla quas eaque accusantium tempora asperiores aliquam, nobis accusamus amet
+            placeat, illo quis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, esse consequatur! Voluptates ea deleniti odio quod repellat, ipsa inventore possimus suscipit accusamus, laudantium tempora perferendis unde ipsum minus illo accusantium veniam quaerat in aliquam dolorem id? Nostrum in velit voluptate odio numquam fuga facilis, saepe obcaecati similique magnam neque quae aspernatur quidem dolorem harum amet vel eum at consequatur perspiciatis omnis odit modi ut eos! Doloremque architecto a laudantium accusantium! Labore officia quo blanditiis sed eum? Molestiae tenetur modi quo, corporis in cupiditate, ullam maiores, alias at dolore quos magni voluptatum eaque laboriosam? Necessitatibus consectetur deserunt sunt, illo eius similique perferendis fugit doloremque minus accusamus. Dignissimos accusamus ullam quisquam beatae excepturi saepe hic in non, nam nesciunt commodi quo inventore? Animi sint doloribus eveniet fugit atque quisquam aperiam, nam distinctio minus facilis tempora nostrum tempore porro autem aliquam, magnam maxime labore culpa. Nostrum earum, odio repellendus ratione quis perspiciatis illo dignissimos cumque exercitationem, numquam veritatis expedita repudiandae, nihil pariatur porro minima quaerat impedit velit ad. Architecto obcaecati non, magnam asperiores debitis dolorum, fuga quasi maiores tenetur suscipit, pariatur voluptas? Inventore repudiandae ipsa vitae iusto, harum nam quam ad vel. Quos excepturi aliquid nobis deleniti consectetur natus aliquam voluptatem soluta nostrum qui tempore quo, aperiam, praesentium inventore quis numquam ratione architecto. Architecto rem officiis soluta est odit, impedit nulla? Magnam mollitia sed soluta quae numquam aspernatur eum recusandae odit quaerat, praesentium minima adipisci corporis iste voluptas vitae. Id dicta laboriosam nihil aliquid quidem ea accusamus cumque distinctio minima rem consequatur iusto, quod mollitia at, quos unde incidunt asperiores odit nulla culpa. Aperiam hic dolore laborum iste nam voluptatibus sed at suscipit officiis temporibus, molestias neque, eligendi voluptatum recusandae eveniet soluta saepe autem, sint excepturi enim. Dolorum necessitatibus consequatur earum, quae commodi culpa aspernatur, sunt impedit voluptas alias asperiores ex aliquam, nihil quis adipisci consectetur fuga? Laudantium, impedit aspernatur omnis provident iste enim fugiat quaerat voluptate minus nostrum incidunt autem alias mollitia dolore a animi qui quidem facilis placeat architecto cumque iure quam illo. Quos ullam dolorem nesciunt maxime minus quis ducimus, corporis error. Possimus, sed voluptatum!</div>
+    </div>
+</body>
+
+</html>

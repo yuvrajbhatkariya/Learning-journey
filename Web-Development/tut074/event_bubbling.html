@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Bubbling</title>
+</head>
+<style>
+    .container {
+        border: 2px solid black;
+        margin: 14px;
+        background-color: aqua;
+    }
+
+    .children {
+        border: 2px solid black;
+        margin: 14px;
+        background-color: rgb(118, 120, 120);
+    }
+
+    .child {
+        border: 2px solid black;
+        margin: 14px;
+        background-color: rgb(215, 156, 250);
+        cursor: pointer;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="children">
+            <div class="child"> i am child</div>
+        </div>
+    </div>
+    <script>
+        function random_color(){
+            let r = Math.floor(Math.random() * 256);
+            let g = Math.floor(Math.random() * 256);
+            let b = Math.floor(Math.random() * 256);
+            let bg_color = `rgb(${r},${g},${b})`
+            return bg_color
+        }
+        
+
+        document.querySelector(".container").addEventListener("click", (e) => {
+            // e.stopPropagation()
+            alert("You clicked the container !!!")
+        })
+
+        document.querySelector(".children").addEventListener("click", (e) => {
+            e.stopPropagation()
+            alert("You clicked children !!!")
+        })
+
+        document.querySelector(".child").addEventListener("click", (e) => {
+            e.stopPropagation()
+            alert("You clicked child  !!!")
+        })
+
+        let a = setInterval(()=>{
+            document.querySelector('.child').style.background = random_color();
+            document.querySelector('.children').style.background = random_color();
+            document.querySelector('.container').style.background = random_color();
+        },1000)
+        console.log(a)
+
+        
+        // let a = setTimeout(()=>{
+        //     document.querySelector('.child').style.background = random_color();
+        //     document.querySelector('.children').style.background = random_color();
+        //     document.querySelector('.container').style.background = random_color();
+        // },3000)
+        console.log(a)
+
+    </script>
+</body>
+
+</html>

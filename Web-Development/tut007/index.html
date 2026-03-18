@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form : Pirate King</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Form for selcting new King of pirate</h1>
+    <form action="Post">
+        <!-- Text Input -->
+        <div>
+            <label for="name">Name : </label>
+            <input type="text" name=name placeholder="Enter your name" required autofocus>
+        </div>
+
+        <!-- Radio button -->
+        <div>
+            <label for="age">Age : </label>
+            <input type="number" name=age placeholder="Enter your age">
+        </div>
+        <div>
+            <label>Gender:</label>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+        </div>
+        <!-- Checkbox -->
+        <div>
+            <input type="checkbox" id="die" name="die" value="yes" required>
+            <label for="die">Ready to risk you life 💀</label>
+        </div>
+        <!-- Image imput -->
+        <div>
+            <label for="img">Upload your Photo:</label>
+            <input type="file" id="img" name="img" accept="image/*">
+            <button type="submit">Upload</button>
+        </div>
+        <!-- Select imput -->
+        <label for="ocean">Sea</label>
+        <select name="Ocean">
+            <option value="east">East Blue</option>
+            <option value="south">South Blue</option>
+            <option value="west">West Blue</option>
+            <option value="north">North Blue</option>
+        </select>
+        <br>
+        <!-- coment or text area -->
+        <div>
+            <label for="write">Write you thoughts on becoming a Pirate King :- </label>
+            <textarea name="write" id="write" placeholder="Write here..."></textarea>
+        </div>
+    </form>
+</body>
+
+</html>

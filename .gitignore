@@ -1,0 +1,59 @@
+# 🔐 Environment & secrets
+.env
+.env.*
+*.env
+
+# 🐍 Python
+__pycache__/
+*.py[cod]
+
+# 🧪 Virtual environments (CRITICAL)
+venv/
+.venv/
+env/
+myenv/
+**/site-packages/
+
+# 📦 Build artifacts
+build/
+dist/
+*.egg-info/
+
+# 📊 ML / Large data & models
+data/
+datasets/
+models/
+*.csv
+*.json
+*.zip
+*.tar
+*.gz
+*.pkl
+*.pt
+*.pth
+*.h5
+
+# 🧠 Compiled ML / native libs
+*.so
+*.dylib
+
+# 📄 Logs
+*.log
+logs/
+
+# 🖥️ OS files
+.DS_Store
+Thumbs.db
+
+# 🧰 IDE
+.vscode/
+.idea/
+
+# 🧩 C++ binaries
+C++/**/*.exe
+C++/**/*.out
+C++/**/*.o
+
+.venv
+
+.ipynb_checkpoints/

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inserting and removing elements</title>
+    <style>
+        .box{
+            display: flex;
+            /* justify-content: center; */
+            background: #f7eaea;
+        }
+        .pink{
+            color: rgb(108, 0, 120);
+        }
+    </style>
+</head>
+<body>
+    <div>Hey Buddy !!!!!</div>
+    <div class="container red green pink" data-createdBy = "ME" data-LogicBy="You">
+        <div class="box" style="display: flex;" >box ::::::::::::: 1</div>
+        <div class="box">box ::::::::::::: 2</div>
+
+    </div>
+    <script>
+
+        // let box = document.querySelector(".box")
+        // console.log(box)
+        // console.dir(box)
+
+
+
+        // node = document.querySelector(".container")
+        // let div = document.createElement("div")
+        // div.innerHTML = "Welcome to new world"
+        // div.setAttribute("class","greet")
+        // document.querySelector(".container").append(div)
+
+
+        // node.append(div)
+        // node.prepend(div)
+        // node.before(div)
+        // node.after(div)
+        // document.querySelector(".box").replaceWith(div)
+
+        let cont = document.querySelector(".container")
+        // cont.insertAdjacentHTML("afterbegin","<b>afterbegin</b>");
+        // cont.insertAdjacentHTML("beforebegin","<b>before begin</b>");
+        // cont.insertAdjacentHTML("beforeend","<b>beforeend</b>");
+        // cont.insertAdjacentHTML("afterend","<b>afterend</b>");
+
+
+        cont.classList.add("pinl")
+    </script>
+</body>
+</html>

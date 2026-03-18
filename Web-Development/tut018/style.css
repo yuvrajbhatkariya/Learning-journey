@@ -1,0 +1,25 @@
+/* .P,.k,.M{
+    color: blue;
+    background-color: aqua;
+    border-color: #0e0e17; 
+    border: 0; 
+    margin: 0;
+    padding: 0;
+} */
+/* *{
+    margin: 0;
+    padding: 0;
+} */
+
+.Sec{
+    background-color: aqua;
+    color: rgb(95, 5, 180);
+    margin: 20px ;
+    padding: 9px;
+    border: 9px solid rgb(59, 46, 46);
+    box-sizing: border-box;
+    height: 60px;
+}
+.G{
+    margin: 40px;
+}

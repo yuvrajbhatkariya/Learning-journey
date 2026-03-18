@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+    <style>
+        .container{
+            width: 80vw;
+            height: 80vh;
+            border:2px solid black;
+            display: grid;
+            /* grid-template-areas: "nav nav nav"
+                                "side head head"
+                                "conten conten conten"
+                                "footer footer footer"; */
+            /* grid-template-columns: 1fr 2fr 1fr; */
+            /* grid-template-columns: repeat(4,1fr); */
+            grid-template-columns: repeat(4,40px);
+            /* grid-template-columns: repeat(4,minmax(10px,1fr)); */
+            /* row-gap: 30px; */
+            /* column-gap: 50px;             */
+            /* align-items: center; */
+            /* justify-items: center; */
+            /* justify-content: center; */
+            place-content: center;
+
+
+        }
+        .item{
+            border:2px solid rgb(56, 39, 236);
+            /* width: 50px; */
+            height: 50px;
+
+        }
+
+    
+        .i-1{
+            background-color: rgb(228, 211, 244);
+            /* grid-area: nav; */
+        }
+        .i-2{
+            background-color: rgb(228, 211, 244);
+            /* grid-area: side; */
+        }
+        .i-3{
+            background-color: rgb(228, 211, 244);
+            /* grid-area: head; */
+        }
+        .i-4{
+            background-color: rgb(228, 211, 244);
+            /* grid-area: conten; */
+        }
+        .i-5{
+            background-color: rgb(228, 211, 244);
+            /* grid-area:footer; */
+        }
+        .i-6{
+            background-color: rgb(228, 211, 244);
+            /* grid-area: nav; */
+        }
+        .i-7{
+            background-color: rgb(228, 211, 244);
+            /* grid-area: nav; */
+        }
+        
+        </style>
+</head>
+
+<body>
+    <div class = "container">
+        <div class = "item i-1">1</div>
+        <div class = "item i-2">2</div>
+        <div class = "item i-3">3</div>
+        <div class = "item i-4">4</div>
+        <div class = "item i-5">5</div>
+        <div class = "item i-6">6</div>
+        <div class = "item i-7">7</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transform</title>
+    <style>
+        .container {
+            border: 2px solid black;
+            height: 70vh;
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            /* justify-content: center; */
+        }
+
+        .box {
+            border: 2px solid;
+            height: 50px;
+            width: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .b1 {
+            background-color: rgb(224, 182, 234);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-self: center;
+            /* transform: rotate(40deg); */
+            /* transform: rotate(0.40turn); */
+            /* transform: rotateX(50deg); */
+            /* transform: rotatey(50deg); */
+            /* transform: skew(40deg); */
+            /* transform: scale(4); */
+            /* transform: scale(3); */
+            /* transform: scaleX(3);
+            transform-origin: 0% 30%; */
+            transform: matrix3d(45deg);
+        }
+
+        .b4 {
+            background-color: rgb(199, 255, 94);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-self: center;
+            /* transform: rotate(40deg); */
+            /* transform: rotate(0.40turn); */
+            /* transform: skewY(40deg);
+            transform: skewY(40deg); */
+            /* transform: scaleX(3);
+            transform: scaleY(3); */
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box b1">box1</div>
+        <div class="box b2">box2</div>
+        <div class="box b3">box3</div>
+        <div class="box b4">box4</div>
+        <div class="box b5">box5</div>
+    </div>
+
+</body>
+
+</html>

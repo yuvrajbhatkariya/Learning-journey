@@ -1,0 +1,39 @@
+<!-- Display property -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Property</title>
+    <!-- https://developer.mozilla.org/en-US/docs/Web/CSS/display -->
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            border: 2px solid black;
+            display:inline-block; 
+            width: 200px;
+        }
+        .box1{
+            padding:20px;
+            margin: 10px;
+        }
+        .box2{
+            /* display: none; */
+            /* visibility: hidden; */
+            display: inline-flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class = "box box1 box2">
+        Hey ! whats up ?
+    </div>
+
+    <samp class = "box1">I am Good</samp>
+    <div class = "box  box1 ">How are you ?</div>
+</body>
+</html>

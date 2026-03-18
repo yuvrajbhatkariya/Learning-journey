@@ -1,0 +1,50 @@
+/*       Types of selector       */
+
+
+/* Element selector */
+li{
+    color: rgb(152, 110, 56);
+}
+
+/* Class selector */
+.pink{
+    color: palevioletred;
+}
+
+/* ID selector */
+#orange{
+    color: orange;
+}
+
+/* Child selector */
+ul > p{
+    color: rgb(255, 12, 28);
+}
+
+/* Descendant selector */
+ul div{
+    color: rgb(26, 94, 213);
+}
+
+/* Universal selector */
+*{
+    margin:0;
+    padding:0;
+}
+
+/* Pseudo selector */
+a:link{
+    color:rgb(76, 227, 34);
+}
+a:visited{
+    color:rgb(214, 220, 30);
+}
+a:active{
+    color: rgb(235, 183, 116);   /*On clicking link it show that color*/
+}
+a:hover{
+    color: black;
+}
+span:first-child{
+    color:rgb(104, 22, 181)
+}

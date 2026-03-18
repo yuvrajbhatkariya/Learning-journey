@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise : 8</title>
+    <style>
+        .container {
+            background-color: blue;
+            width: 1400px;
+            height: 600px;
+            position: relative;
+            padding: 0px 5px;
+        }
+
+        /* .box {
+            background-color: red;
+            height: 70px;
+            width: 70px;
+            border-radius: 80px;
+            position: absolute;
+            bottom: 0;
+            
+            --x: 0px;
+            --y: 0px;
+
+            transform: translate(var(--x), var(--y));
+
+            animation: danscing-ball-x 5s ease-in-out 1s infinite alternate,
+                       danscing-ball-y 5s ease-in-out 1s infinite alternate;
+
+        } */
+
+        /* @keyframes danscing-ball {
+            from{
+
+            }
+            to{
+                transform: translatex(200px) translateY(-200px);
+            }
+        } */
+        /* @keyframes danscing-ball-x {
+            0% {}
+
+            16% {
+                --x: 100px;
+            }
+
+            32% {
+                --x: 200px;
+            }
+
+            48% {
+                --x: 300px;
+            }
+
+            64% {
+                --x: 400px;
+            }
+
+            80% {
+                --x: 500px;
+            }
+
+            96% {
+                --x: 600px;
+            }
+
+            100% {
+                --x: 600px;
+            }
+        }
+
+        @keyframes danscing-ball-y {
+            0% {}
+
+            16% {
+                --y:-200px;
+            }
+
+            32% {
+                --y:0px;
+            }
+
+            48% {
+                --y:-200px;
+            }
+
+            64% {
+                --y:0px;
+            }
+
+            80% {
+                --y:-200px;
+            }
+
+            96% {
+                --y:0px;
+            }
+
+            100% {
+                --y:0px;
+            }
+        } */
+
+        .x-wrap {
+            animation: moveX 10s ease-in-out infinite alternate forwards;
+            position: absolute;
+            bottom: 0;
+        }
+
+        .box {
+            width: 70px;
+            height: 70px;
+            border-radius: 80px;
+            background: red;
+            animation: moveY 2s ease-in-out infinite alternate;
+        }
+
+        @keyframes moveX {
+            from {
+                transform: translateX(0);
+            }
+
+            to {
+                transform: translateX(1335px);
+            }
+        }
+
+        @keyframes moveY {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-200px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="x-wrap">
+            <div class="box"></div>
+        </div>
+    </div>
+
+</body>
+
+</html>
