@@ -1,16 +1,16 @@
-from langchain_huggingface import ChatHuggingFace,HuggingFaceEndpoint
+from langchain_ollama import ChatOllama
 from langchain_core.prompts import PromptTemplate
 from langchain_core.output_parsers import StrOutputParser
 from dotenv import load_dotenv
 load_dotenv()
 parser = StrOutputParser()
-llm = HuggingFaceEndpoint(
-    repo_id='HuggingFaceH4/zephyr-7b-beta',
-    task='text-genration',
+
+
+model = ChatOllama(
+    model="qwen2.5-coder:7b",
     temperature=0.2
 )
 
-model = ChatHuggingFace(llm = llm)
 # result = model.invoke("What is yout name ?")
 # print(result.content)
 
@@ -25,8 +25,8 @@ prompt2 = PromptTemplate(
 )
 
 prompt3 = PromptTemplate(
-    template="Give the mvp player among that them at that time of world cup \n {name}",
-    input_variables=["name"]
+    template="Give the mvp of that team in finals. \n {list}",
+    input_variables=["list"]
 )
 
 

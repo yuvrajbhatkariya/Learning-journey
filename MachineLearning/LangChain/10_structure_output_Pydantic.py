@@ -10,7 +10,7 @@ class Employe(BaseModel):
 
 new_employe= {
     'name' : 'Tony',
-    'age'  : '33',
+    # 'age'  : '33',
     'email' : 'yuvraj@gmail.com',
     'email' : 'yuvraj@zoho.com'
 

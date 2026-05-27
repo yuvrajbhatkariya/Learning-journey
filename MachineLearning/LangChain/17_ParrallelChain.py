@@ -1,9 +1,12 @@
-from langchain_huggingface import ChatHuggingFace,HuggingFaceEndpoint
 from langchain_core.prompts import PromptTemplate
 from langchain_core.output_parsers import StrOutputParser
 from dotenv import load_dotenv
 from langchain_ollama import ChatOllama
 from langchain_core.runnables import RunnableParallel  
+from langchain_google_genai import ChatGoogleGenerativeAI
+import os
+
+
 load_dotenv()
 parser = StrOutputParser()
 
@@ -11,13 +14,23 @@ with open("data.text","r",encoding="utf-8") as file :
     text = file.read()
 
 
-llm = HuggingFaceEndpoint(
-    repo_id='HuggingFaceH4/zephyr-7b-beta',
-    task='text-genration',
-    temperature=0.2
-)
-model1 = ChatHuggingFace(llm = llm)
+# model1 = ChatGoogleGenerativeAI(
+#     model="gemini-2.5-flash-lite",
+#     temperature=0.5,
+#     google_api_key=os.getenv("GOOGLE_API_KEY")
+# )
 
+# llm = HuggingFaceEndpoint( 
+#     repo_id='HuggingFaceH4/zephyr-7b-beta',
+#     task='text-genration',
+#     temperature=0.2
+# )
+# model1 = ChatHuggingFace(llm = llm)
+
+model1 = ChatOllama(
+    model="llama3",
+    temperature=0.5
+)
 model2 = ChatOllama(
     model="qwen2.5-coder:7b",
     temperature=0.5
@@ -49,7 +62,7 @@ paralle_chain = RunnableParallel({
 merge_chain = prompt3 | model1 | parser
 final_chain = paralle_chain | merge_chain
 
-# result = final_chain.invoke({"text": text})
-# print(result)
+result = final_chain.invoke({"text": text})
+print(result)
 
 final_chain.get_graph().print_ascii()

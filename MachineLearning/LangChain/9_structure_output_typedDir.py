@@ -3,7 +3,7 @@ from typing import TypedDict,Annotated,Optional,Literal
 
 
 model = ChatOllama(
-    model = 'qwen2.5-coder:7b',
+    model = 'llama3',
     temperature=0.5
 )
 
