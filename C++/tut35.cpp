@@ -1,16 +1,16 @@
 // *************/Distructor/****************//
 #include<iostream>
 using namespace std;
-int count= 0;
+int cnt= 0;
 class ved{
     public :
     ved(){
-        count++;
-        cout<<"constructor is called : "<<count<<endl;
+        cnt++;
+        cout<<"constructor is called : "<<cnt<<endl;
     }
     ~ved(){
-        cout<<"destructor is called :"<<count<<endl;
-        count--;
+        cout<<"destructor is called :"<<cnt<<endl;
+        cnt--;
     }
 };
 int main(){
@@ -24,7 +24,7 @@ int main(){
         cout<<"Exiting a block"<<endl;
     }
     cout<<"back to main function ."<<endl;
-    cout<<"local variable "<<count<<endl;        // having local variable values. 
-    cout<<"Global variable "<<::count<<endl;     // not giving actual globak values 
+    cout<<"local variable "<<cnt<<endl;        // having local variable values. 
+    cout<<"Global variable "<<::cnt<<endl;     // not giving actual globak values 
     return 0;
 }

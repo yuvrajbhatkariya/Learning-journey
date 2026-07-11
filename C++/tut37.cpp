@@ -40,7 +40,7 @@ public:
         id = inpid;
         cout<<"The id of employee is : "<<id<<endl;
     }
-    long long int phone = 7470713290;
+    long long int phone = 1234567890;
     void getdata(int v)
     {
         cout << "your application no. is = " << v << endl;
