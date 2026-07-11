@@ -4,10 +4,10 @@ using namespace std;
 class shop{
     int ProductId[100];
     int ProductPrice[100];
-    int counter;
-    int z;
+    int counter = 0;
+    int z = 0;
     public:
-    void Count(void){counter = 0;}
+    void Count(void){counter = 1;}
     void setprice(void);
     void displayprice(void);
     void total(void);
@@ -33,16 +33,36 @@ int main(){
     shop s;
     char a;
     cout<<"Hello sir/mam "<<endl;
-    for(int i ; i < 1000; i++){
-        cout<<"Do you want to add items(if yes than type 'Y' or type anything for exit) "<<endl;
-        cin>>a;
-        if (a == 'Y'){
+    // for(int i ; i < 1000; i++){
+    //     cout<<"Do you want to add items(if yes than type 'Y' or type anything for exit) "<<endl;
+    //     cin>>a;
+    //     if (a == 'Y'){
+    //         s.setprice();
+    //     }
+    //     else{
+    //         break;
+    //     }
+    // }
+    // for(int i ; i < 1000; i++){
+    //     cout<<"Do you want to add items(if yes than type 'Y' or type anything for exit) "<<endl;
+    //     cin>>a;
+    //     if (a == 'Y'){
+    //         s.setprice();
+    //     }
+    //     else{
+    //         break;
+    //     }
+    // }
+    cout<<"Do you want to add items(if yes than type 'Y' or type anything for exit) "<<endl;
+    cin >>a;
+    if(a == 'Y' || a == 'y'){
+        while(a == 'y' || a == 'y'){
             s.setprice();
-        }
-        else{
-            break;
+            cout<<"You want to add items(if yes than type Y/y  or type anything for exit) "<<endl;
+            cin>>a;
         }
     }
+
     cout<<endl<<endl<<endl;
     s.displayprice();
     s.total();

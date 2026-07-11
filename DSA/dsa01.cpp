@@ -2,7 +2,7 @@
 
 //---> Pair :
 
-#include<bits/stdc++.h>        // Master of all libraries
+#include<iostream>        // Master of all libraries
 using namespace std;
 int main(){
 

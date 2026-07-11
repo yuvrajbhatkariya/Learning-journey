@@ -59,6 +59,6 @@
               do{
                   cout <<a*6<< endl;
                   a++;
-              }while ( a<=10);
+              }while ( a>10);
     return 0;
     }
