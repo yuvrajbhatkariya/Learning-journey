@@ -12,6 +12,7 @@ int main(){
     // New operator :-
     int* x = new int(1086);
     cout<<"x : "<<*x<<endl;
+    cout<<"x : "<<x<<endl;
 
     float *A = new float[3];
     A[0] = 50;

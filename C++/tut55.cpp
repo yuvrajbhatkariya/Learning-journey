@@ -25,7 +25,7 @@ int main(){
     B->a = 69;
     B->display();
 
-    // it points the derived class but not 
+    // it points the derived class but not acces the value
     // B->b = 78;
     // B->display();
 

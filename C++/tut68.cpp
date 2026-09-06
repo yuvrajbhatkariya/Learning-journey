@@ -24,7 +24,7 @@ float buddy<t1,t2> :: average(void)
 {
     avg = (a + b) / 2;
     return avg;
-}
+
 
 
 

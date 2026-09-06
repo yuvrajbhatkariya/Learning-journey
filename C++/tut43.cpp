@@ -39,12 +39,12 @@ class new2 : public new1{
     }
 };
 int main(){
-    // base1 g;
-    // g.greet();
-    // base2 k;
-    // k.greet();
-    // derived d;
-    // d.greet();
+    base1 g;
+    g.greet();
+    base2 k;
+    k.greet();
+    derived d;
+    d.greet();
 
 
     new2 o1;
