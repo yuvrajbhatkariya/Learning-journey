@@ -48,19 +48,19 @@ master_layout.addLayout(row3)
 main_window.setLayout(master_layout)
 
 
-# Create Functions :-
+# 5 Create Functions :-
 
 
 def randomWord1():
     word = choice(words)
     return word
 
-# 5. Events
+# 6 . Events
 button1.clicked.connect(lambda: text1.setText(randomWord1()))
 button2.clicked.connect(lambda: text2.setText(randomWord1()))
 button3.clicked.connect(lambda: text3.setText(randomWord1()))
 
 
-# 6. Show / Run App
+# 7. Show / Run App
 main_window.show()
 app.exec_()
