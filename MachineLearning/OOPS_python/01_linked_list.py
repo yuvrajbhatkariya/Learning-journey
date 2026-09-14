@@ -55,6 +55,17 @@ class LinkedList:
             temp = temp.next
         print()
 
+    def rever(self):
+        curr = self.head
+        prev = None
+        while curr != None:
+            temp = curr.next
+            curr.next = prev
+            prev = curr
+            curr = temp
+            if(curr == None):
+                self.head = prev
+        
 
 ll = LinkedList()
 ll.insertAtHead(10)
@@ -74,5 +85,8 @@ ll.deleteAtPosition(7)
 ll.deleteAtPosition(1)
 ll.view()
 ll.deleteAtPosition(3)
+ll.view()
+
+ll.rever()
 ll.view()
 # print("hello")
